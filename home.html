@@ -14,8 +14,8 @@
             <div class="mockup-phone-display  text-white grid place-content-top mt-16 ">
                 <div>
                     <div class="text-black p-10 flex gap-16">
-                        <p class="font-semibold text-xl">Available Balance </p>
-                        <h2 class="font-bold text-2xl">$4665</h2>
+                        <p class="font-semibold text-xl">Available Balance</p>
+                        <h2 id="account-balance" class="font-bold text-2xl">4665</h2>
                     </div>
                     <div>
                         <h3 class="text-xl text-black"> 🔥 Welcome My Dear X</h3>
@@ -31,7 +31,7 @@
                     <div class="divider"></div>
                     <!-- add money form start -->
 
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body text-black">
                           <fieldset class="fieldset">
                             <label class="label">Amount</label>
@@ -44,10 +44,27 @@
                       </div>
 
                     <!-- add money form end -->
+
+                     <!-- cash out form start -->
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body text-black">
+                          <fieldset class="fieldset">
+                            <label class="label">Amount</label>
+                            <input type="text" id="cash-out-money" class="input" placeholder="Enter cash out amount" />
+                            <label class="label">Pin</label>
+                            <input type="password" id="cash-out-pin-number" class="input" autocomplete="off" placeholder="Enter your Pin Number" />
+                            <button id="btn-cash-out-money" class="btn btn-neutral mt-4">Cash Out Money</button>
+                          </fieldset>
+                        </div>
+                      </div>
+
+                    <!-- cash out money form end -->
                 </div>
             </div>
             
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashOut.js"></script>
 </body>
 </html>
